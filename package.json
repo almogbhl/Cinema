@@ -36,5 +36,6 @@
   ],
   "devDependencies": {
     "terser": "^3.14.1"
-  }
+  },
+  "homepage" : "http://almogbhl.github.io/Cinema"
 }
