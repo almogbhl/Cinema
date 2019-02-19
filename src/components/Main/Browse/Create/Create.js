@@ -25,8 +25,7 @@ export default Create;
 
 const Box = styled.div`
   margin-top: 3rem;
-  margin-left: 2.3rem;
-
+  align-self: center;
 `;
 
 const Button = styled.button`
