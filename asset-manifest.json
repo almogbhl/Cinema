@@ -1,13 +1,13 @@
 {
-  "main.js": "/Cinema/static/js/main.27620aba.chunk.js",
-  "main.js.map": "/Cinema/static/js/main.27620aba.chunk.js.map",
+  "main.js": "/Cinema/static/js/main.eda7f905.chunk.js",
+  "main.js.map": "/Cinema/static/js/main.eda7f905.chunk.js.map",
   "runtime~main.js": "/Cinema/static/js/runtime~main.0524d297.js",
   "runtime~main.js.map": "/Cinema/static/js/runtime~main.0524d297.js.map",
   "static/css/2.8ff62d2b.chunk.css": "/Cinema/static/css/2.8ff62d2b.chunk.css",
   "static/js/2.312af712.chunk.js": "/Cinema/static/js/2.312af712.chunk.js",
   "static/js/2.312af712.chunk.js.map": "/Cinema/static/js/2.312af712.chunk.js.map",
   "index.html": "/Cinema/index.html",
-  "precache-manifest.d66b72a4e83f0437902d0b634a7d2840.js": "/Cinema/precache-manifest.d66b72a4e83f0437902d0b634a7d2840.js",
+  "precache-manifest.14c939752290cdb5e0cb3516b163d0f5.js": "/Cinema/precache-manifest.14c939752290cdb5e0cb3516b163d0f5.js",
   "service-worker.js": "/Cinema/service-worker.js",
   "static/css/2.8ff62d2b.chunk.css.map": "/Cinema/static/css/2.8ff62d2b.chunk.css.map"
 }
