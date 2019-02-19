@@ -27,7 +27,7 @@
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://almogbhl.github.io/my_cinema",
+  "homepage": "https://almogbhl.github.io/Cinema/",
   "eslintConfig": {
     "extends": "react-app"
   },
