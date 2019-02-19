@@ -17,18 +17,21 @@ class Card extends Component {
 
   componentDidMount() {
     this.setState({ movieData: this.props.data });
-    this.validateTitle();
+    this.validateTitle(this.props.data.Title);
   }
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate(prevProps, prevState) {
     if (this.props.data !== prevProps.data) {
-      this.validateTitle();
+      this.validateTitle(this.props.data.Title);
       this.setState({ movieData: this.props.data });
+    }
+    if (this.state.movieData !== prevState.movieData) {
+      this.validateTitle(this.state.movieData.Title);
     }
   }
 
-  validateTitle = () => {
-    const title = this.props.data.Title;
+  validateTitle = (title) => {
+    console.log(title)
     validator.blacklist(title, '/[^\x00-\x7F]+/')
     const Title = _.startCase(title);
     this.setState({ Title });
@@ -46,6 +49,7 @@ class Card extends Component {
   };
 
   updateMovieData = data => {
+    // this.validateTitle(data.Title);
     this.setState({ movieData: data });
   };
 

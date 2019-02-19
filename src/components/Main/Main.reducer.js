@@ -11,7 +11,6 @@ import {
 } from "./Browse/Create/Create.action";
 
 import { DELETE_ITEM } from "./Browse/Card/Card.action";
-import { faFilter } from "@fortawesome/free-solid-svg-icons";
 
 let initialState = {
   movies_list: null,
