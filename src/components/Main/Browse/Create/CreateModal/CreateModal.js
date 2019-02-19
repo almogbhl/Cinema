@@ -154,7 +154,12 @@ const Button = styled.button`
   }
 `;
 
-const Input = styled.input``;
+const Input = styled.input`
+  height: 3rem;
+  font-size: 2rem;
+  border: 2px solid gray;
+  width: 20rem;
+`;
 
 const Error = styled.div`
   margin: 1rem;

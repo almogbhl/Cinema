@@ -48,9 +48,17 @@ class CreateModal extends Component {
         this.setState({ modalIsOpen: true });
       }
     }
+
+    if(this.props.data !== prevProps.data) {
+      this.updateMovieData();
+    }
   }
 
   componentDidMount() {
+    this.updateMovieData();
+  }
+
+  updateMovieData = () => {
     const {
       Title,
       Year,

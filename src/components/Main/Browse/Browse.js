@@ -61,24 +61,36 @@ const Main = styled.main`
   display: flex;
   flex-direction: column;
   padding: 0 2.5rem;
-  @media (min-width: 1028px) {
+  @media (min-width: 1127px) {
+    padding: 0 5rem;
+  }
+  @media (min-width: 1439px) {
     padding: 0 8rem;
   }
 `;
 
 const Ul = styled.ul`
   display: flex;
-  justify-content: ${props => (props.view ? "space-between" : "flex-start")};
+  justify-content: space-between;
   flex-wrap: wrap;
+    margin: 0 auto;
+  @media (min-width: 1439px) {
+    justify-content: flex-start;
+  }
 `;
 
 const Li = styled.li`
+  display: flex;
+  justify-content: center;
   width: 100%;
-  margin-right: ${props => (props.view ? "0px" : "1.3rem")};
-  @media (min-width: 743px) {
+
+  @media (min-width: 550px) {
     width: calc(50% - 1.3rem);
   }
-  @media (min-width: 1028px) {
+  @media (min-width: 900px) {
+    width: calc(33.333% - 1.3rem);
+  }
+  @media (min-width: 1127px) {
     width: calc(25% - 1.3rem);
   }
   @media (min-width: 1439px) {

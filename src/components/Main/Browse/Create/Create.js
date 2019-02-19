@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import CreateModal from './CreateModal/CreateModal';
-
+import CreateModal from "./CreateModal/CreateModal";
 
 class Create extends Component {
   state = {
     activeCreateModal: false
-  }
+  };
   onClickCreate = () => {
     this.setState({ activeCreateModal: true }, () => {
       this.setState({ activeCreateModal: false });
@@ -14,25 +13,30 @@ class Create extends Component {
   };
   render() {
     return (
-     <Box>
-       <Button onClick={this.onClickCreate}>Add New Movie</Button>
-       <CreateModal active={this.state.activeCreateModal}/>
-     </Box>
+      <Box>
+        <Button onClick={this.onClickCreate}>Add New Movie</Button>
+        <CreateModal active={this.state.activeCreateModal} />
+      </Box>
     );
   }
 }
 
 export default Create;
 
+const Box = styled.div`
+  margin-top: 3rem;
+  margin-left: 2.3rem;
 
-const Box = styled.div `
-margin-top: 3rem;
-margin-left: 1rem;
-width: 10rem;
-background-color: white;
-`
+`;
 
-const Button = styled.button `
-color: black;
-font-size: 2rem;
-`
+const Button = styled.button`
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 15rem;
+  border-radius: 4px;
+  border: none;
+  margin-right: 1rem;
+  color: white;
+  background-color: #f7b239;
+  cursor: pointer;
+`;

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Loader from "react-loader-spinner";
+import _ from 'lodash';
+import validator from 'validator';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DeleteModal from "./Modal/DeleteModal";
 import EditModal from "./Modal/EditModal";
@@ -8,19 +10,29 @@ import EditModal from "./Modal/EditModal";
 class Card extends Component {
   state = {
     movieData: [],
+    Title: "",
     activeEditModal: false,
-    activeDeleteModal: false,
+    activeDeleteModal: false
   };
 
   componentDidMount() {
     this.setState({ movieData: this.props.data });
+    this.validateTitle();
   }
 
   componentDidUpdate(prevProps) {
-    if(this.props.data !== prevProps.data) {
+    if (this.props.data !== prevProps.data) {
+      this.validateTitle();
       this.setState({ movieData: this.props.data });
     }
   }
+
+  validateTitle = () => {
+    const title = this.props.data.Title;
+    validator.blacklist(title, '/[^\x00-\x7F]+/')
+    const Title = _.startCase(title);
+    this.setState({ Title });
+  };
 
   onClickDelete = () => {
     this.setState({ activeDeleteModal: true }, () => {
@@ -33,9 +45,9 @@ class Card extends Component {
     });
   };
 
-  updateMovieData = (data) => {
+  updateMovieData = data => {
     this.setState({ movieData: data });
-  }
+  };
 
   horizonFlip = num => {
     const innerCard = this.refs.cardInner;
@@ -44,7 +56,6 @@ class Card extends Component {
 
   render() {
     const {
-      Title,
       Year,
       Runtime,
       Genre,
@@ -53,6 +64,7 @@ class Card extends Component {
       Poster,
       imdbID
     } = this.state.movieData;
+    const Title = this.state.Title;
 
     let posterImg = "";
     if (Poster === "N/A") {
@@ -165,19 +177,21 @@ const ContentBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
+  height: 100%;
 `;
 
 const PopcornIcon = styled.img`
-  margin: 2rem 0;
-  width: 7rem;
-  height: 7rem;
+  margin: 1rem 0;
+  width: 5rem;
+  height: 5rem;
 `;
 
 const MovieTitle = styled.h3`
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  letter-spacing: 1.5px;
+  font-size: 2rem;
+  letter-spacing: 1px;
 `;
 
 const ContentList = styled.ul`
@@ -211,12 +225,13 @@ const MovieGenre = styled.p`
 const DirectorName = styled(MovieGenre)``;
 
 const OptionBox = styled.div`
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   width: 100%;
   display: flex;
   height: 4.5rem;
   align-items: center;
   justify-content: space-between;
+  align-self: flex-end;
 `;
 const EditBox = styled.div`
   flex-basis: 50%;
