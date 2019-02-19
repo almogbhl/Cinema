@@ -23,7 +23,7 @@ export const fetchMovies = () => {
 
     return Promise.all(
       moviesNames.map(name =>
-        fetch(`http://www.omdbapi.com/?t=${name}&apikey=977116c7`)
+        fetch(`https://www.omdbapi.com/?t=${name}&apikey=977116c7`)
           .then(response => response.json())
           .catch(err =>
             dispatch({
