@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "almogbhl.github.io/my-cinema-app/precache-manifest.6b308ddb9401e889224c4ce3f5968859.js"
+  "/my-cinema-app/precache-manifest.d679adeaa1e7a08655694af24e75f4d0.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("almogbhl.github.io/my-cinema-app/index.html", {
+workbox.routing.registerNavigationRoute("/my-cinema-app/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
