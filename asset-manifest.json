@@ -1,13 +1,13 @@
 {
-  "main.js": "/Cinema/static/js/main.eda7f905.chunk.js",
-  "main.js.map": "/Cinema/static/js/main.eda7f905.chunk.js.map",
-  "runtime~main.js": "/Cinema/static/js/runtime~main.0524d297.js",
-  "runtime~main.js.map": "/Cinema/static/js/runtime~main.0524d297.js.map",
-  "static/css/2.8ff62d2b.chunk.css": "/Cinema/static/css/2.8ff62d2b.chunk.css",
-  "static/js/2.312af712.chunk.js": "/Cinema/static/js/2.312af712.chunk.js",
-  "static/js/2.312af712.chunk.js.map": "/Cinema/static/js/2.312af712.chunk.js.map",
-  "index.html": "/Cinema/index.html",
-  "precache-manifest.14c939752290cdb5e0cb3516b163d0f5.js": "/Cinema/precache-manifest.14c939752290cdb5e0cb3516b163d0f5.js",
-  "service-worker.js": "/Cinema/service-worker.js",
-  "static/css/2.8ff62d2b.chunk.css.map": "/Cinema/static/css/2.8ff62d2b.chunk.css.map"
+  "main.js": "almogbhl.github.io/my-cinema-app/static/js/main.e87631f3.chunk.js",
+  "main.js.map": "almogbhl.github.io/my-cinema-app/static/js/main.e87631f3.chunk.js.map",
+  "runtime~main.js": "almogbhl.github.io/my-cinema-app/static/js/runtime~main.56944ca7.js",
+  "runtime~main.js.map": "almogbhl.github.io/my-cinema-app/static/js/runtime~main.56944ca7.js.map",
+  "static/css/2.41406a24.chunk.css": "almogbhl.github.io/my-cinema-app/static/css/2.41406a24.chunk.css",
+  "static/js/2.ceeb722d.chunk.js": "almogbhl.github.io/my-cinema-app/static/js/2.ceeb722d.chunk.js",
+  "static/js/2.ceeb722d.chunk.js.map": "almogbhl.github.io/my-cinema-app/static/js/2.ceeb722d.chunk.js.map",
+  "index.html": "almogbhl.github.io/my-cinema-app/index.html",
+  "precache-manifest.6b308ddb9401e889224c4ce3f5968859.js": "almogbhl.github.io/my-cinema-app/precache-manifest.6b308ddb9401e889224c4ce3f5968859.js",
+  "service-worker.js": "almogbhl.github.io/my-cinema-app/service-worker.js",
+  "static/css/2.41406a24.chunk.css.map": "almogbhl.github.io/my-cinema-app/static/css/2.41406a24.chunk.css.map"
 }
